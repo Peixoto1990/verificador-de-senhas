@@ -1,0 +1,126 @@
+body {
+    background-color: whitesmoke;
+}
+
+#formUser {
+    padding: 1rem;
+}
+
+fieldset {
+    padding: 2rem;
+    background-color: white;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    width: max-content;
+    margin-bottom: .3rem;
+}
+
+input:not(#enviar) {
+    width: 100%;
+    padding: .3rem .5rem;
+}
+
+.invalid {
+    border: 1px solid red;
+    box-shadow: 0px 0px 3px 1px rgba(255, 0, 0, 0.514);
+}
+
+.valid {
+    border: 1px solid rgb(26, 158, 0);
+    box-shadow: 0px 0px 3px 1px rgba(26, 158, 0, 0.514);
+}
+
+input:is(#enviar) {
+    display: block;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    margin-left: auto;
+    color: rgb(0, 123, 139);
+    border: 1px solid rgb(0, 123, 139);
+    transition: .3s background ease-in-out, .3s color ease-in-out;
+}
+
+input:is(#enviar):hover {
+    color: white;
+    background-color: rgb(0, 123, 139);
+}
+
+input:disabled {
+    background-color: rgb(172, 172, 172);
+}
+
+.checkArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: white;
+}
+
+.checkArea > h2 {
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+    color: rgb(0, 123, 139);
+}
+
+.checkPattern {
+    color: red;
+}
+
+.checkPatternValid {
+    color: rgb(26, 158, 0) !important;
+}
+
+@media only screen and (min-width: 0) {
+    main {
+        width: 100%;
+    }
+
+    label, input:is(#enviar), input:not(#enviar), .checkPattern {
+        font-size: 1.3rem;
+    }
+
+    input:not(#enviar) {
+        margin-bottom: 1.4rem;
+    }
+
+    .checkArea {
+        margin-top: 1.5rem;
+    }
+
+    .checkArea > h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 281px) {
+    .checkArea > h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 880px) {
+    main {
+        width: 50%;
+    }
+
+    label, input:is(#enviar), input:not(#enviar), .checkPattern {
+        font-size: 1.1rem;
+    }
+
+    input:not(#enviar) {
+        margin-bottom: 1.2rem;
+    }
+
+    .checkArea {
+        margin-top: 1rem;
+    }
+
+    .checkArea > h2 {
+        font-size: 1.2rem;
+    }
+}

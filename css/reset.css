@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+fieldset, button {
+    outline: none;
+    border: none;
+}
+
+input:is(:focus, :active){
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+@media only screen and (min-width: 0) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    :root {
+        font-size: 16px;
+    }
+}
